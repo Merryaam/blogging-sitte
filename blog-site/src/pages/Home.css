@@ -1,0 +1,85 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: url("/bay-bg.jpg") no-repeat center center/cover; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0); /* soft tint */
+   
+}
+
+.home-content {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  max-width: 800px;
+  padding: 10px;
+}
+
+.home-title {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+}
+
+.home-subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.home-tagline {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.3rem;
+  color: whitesmoke;
+  margin-bottom: 40px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: rgba(255, 196, 196, 0.474);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(244, 135, 63, 0.6);
+}
+
+.btn-primary:hover {
+  background: #e11d5500;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: rgba(255, 196, 196, 0.474);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #fecdd3;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(244, 135, 63, 0.6);
+}
+
+.btn-secondary:hover {
+  background: #e11d5500;
+  transform: scale(1.05);
+}
