@@ -1,12 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: "dist",
+  },
+  server: {
+    port: 3000,
+  },
+});
